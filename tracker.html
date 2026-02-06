@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Finance Tracker - Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">💰 FinanceTracker</div>
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="tracker.html" class="active">Tracker</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" id="logoutBtn">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Main Tracker Container -->
+<div class="tracker-container">
+    <h1>Finance Tracker</h1>
+    <p>Manage your income and expenses here.</p>
+
+    <div class="tracker-sections">
+
+        <!-- Add Income -->
+        <div class="tracker-card">
+            <h2>Add Income</h2>
+            <form id="incomeForm">
+                <div class="input-group">
+                    <label for="incomeSource">Source</label>
+                    <input type="text" id="incomeSource" placeholder="Salary, Business, etc.">
+                </div>
+                <div class="input-group">
+                    <label for="incomeAmount">Amount</label>
+                    <input type="number" id="incomeAmount" placeholder="Enter amount">
+                </div>
+                <button type="submit" class="btn-add-income">Add Income</button>
+                <p id="incomeError" class="error-msg"></p>
+            </form>
+        </div>
+
+        <!-- Add Expense -->
+        <div class="tracker-card">
+            <h2>Add Expense</h2>
+            <form id="expenseForm">
+                <div class="input-group">
+                    <label for="expenseItem">Item</label>
+                    <input type="text" id="expenseItem" placeholder="Groceries, Rent, Internet...">
+                </div>
+                <div class="input-group">
+                    <label for="expenseCategory">Category</label>
+                    <select id="expenseCategory">
+                        <option value="">Select Category</option>
+                        <option value="Food">Food</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Bills">Bills</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="expenseAmount">Amount</label>
+                    <input type="number" id="expenseAmount" placeholder="Enter amount">
+                </div>
+                <button type="submit" class="btn-add-expense">Add Expense</button>
+                <p id="expenseError" class="error-msg"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Transaction Table -->
+    <div class="recent-activity">
+        <h2>All Transactions</h2>
+        <table id="allTransactionsTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Category/Source</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="5">No transactions yet.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
