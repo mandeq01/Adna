@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Finance Tracker - Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">💰 FinanceTracker</div>
+    <ul class="nav-links">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" id="logoutBtn">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Main Dashboard -->
+<div class="dashboard-container">
+    <div class="welcome-section">
+        <h1 id="welcomeMsg">Welcome, User!</h1>
+        <p>Here’s a quick overview of your finances.</p>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="summary-cards">
+        <div class="card income-card">
+            <h3>Total Income</h3>
+            <p id="totalIncome">$0.00</p>
+        </div>
+        <div class="card expense-card">
+            <h3>Total Expenses</h3>
+            <p id="totalExpense">$0.00</p>
+        </div>
+        <div class="card balance-card">
+            <h3>Current Balance</h3>
+            <p id="currentBalance">$0.00</p>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+        <h2>Quick Actions</h2>
+        <div class="actions">
+            <a href="tracker.html" class="action-btn">Add Income / Expense</a>
+            <a href="reports.html" class="action-btn">View Reports</a>
+        </div>
+    </div>
+
+    <!-- Recent Activity Table -->
+    <div class="recent-activity">
+        <h2>Recent Transactions</h2>
+        <table id="transactionTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="5">No transactions yet.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
