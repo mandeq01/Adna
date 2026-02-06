@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Finance Tracker - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background & Layout -->
+<div class="login-container">
+    <div class="left-panel">
+        <div class="welcome-text">
+            <h1>Welcome Back!</h1>
+            <p>Track your income, expenses, and financial goals easily.</p>
+            <ul class="features-list">
+                <li>💰 Monitor Income & Expenses</li>
+                <li>📊 Interactive Reports & Charts</li>
+                <li>🗂 Categorized Transactions</li>
+                <li>📱 Mobile & Desktop Friendly</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right-panel">
+        <div class="login-card">
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+                <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+                <p id="loginError" class="error-msg"></p>
+            </form>
+            <div class="social-login">
+                <p>Or login with</p>
+                <div class="social-icons">
+                    <button class="facebook">Facebook</button>
+                    <button class="google">Google</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
