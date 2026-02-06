@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Finance Tracker - Reports</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">💰 FinanceTracker</div>
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="reports.html" class="active">Reports</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" id="logoutBtn">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Reports Dashboard -->
+<div class="dashboard-container">
+    <h1>Financial Reports</h1>
+    <p>Overview of your income and expenses</p>
+
+    <!-- Summary Cards -->
+    <div class="summary-cards">
+        <div class="card income-card">
+            <h3>Total Income</h3>
+            <p id="reportIncome">$0.00</p>
+        </div>
+        <div class="card expense-card">
+            <h3>Total Expenses</h3>
+            <p id="reportExpense">$0.00</p>
+        </div>
+        <div class="card balance-card">
+            <h3>Balance</h3>
+            <p id="reportBalance">$0.00</p>
+        </div>
+    </div>
+
+    <!-- Category Breakdown Table -->
+    <div class="category-breakdown">
+        <h2>Expenses by Category</h2>
+        <table id="categoryTable">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Total Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="2">No data available</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="chart-section">
+        <h2>Expense Distribution</h2>
+        <canvas id="expenseChart" width="400" height="200"></canvas>
+        <p style="font-size: 14px; color: #555; margin-top: 5px;">*Chart updates dynamically based on transactions</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
